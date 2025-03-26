@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Tabela com Mesclagem</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela com Mesclagem</caption>
+        <colgroup>
+            <col style="background-color: #f2f2f2">
+            <col style="background-color: #e6e6e6">
+            <col style="background-color: #cccccc">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Detalhes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">João</td>
+                <td>Idade</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Profissão</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Maria</td>
+                <td>Idade</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Profissão</td>
+                <td>Médica</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de Pessoas: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
